@@ -1,0 +1,8 @@
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\obj\Debug\FreeFile.DownloadManager.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\bin\Debug\FreeFile.DownloadManager.dll.config
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\bin\Debug\FreeFile.DownloadManager.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\bin\Debug\FreeFile.DownloadManager.pdb
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\bin\Debug\Entities.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\bin\Debug\Entities.pdb
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\obj\Debug\FreeFile.DownloadManager.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFile.DownloadManager\obj\Debug\FreeFile.DownloadManager.pdb

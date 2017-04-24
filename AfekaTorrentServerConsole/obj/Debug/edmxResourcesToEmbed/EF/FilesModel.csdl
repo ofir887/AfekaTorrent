@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FreeFilesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AfekaTorrentEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Files" EntityType="FreeFilesModel.File" />
+    <EntitySet Name="Peers" EntityType="FreeFilesModel.Peer" />
+    <EntitySet Name="Users" EntityType="FreeFilesModel.User" />
+    <AssociationSet Name="FK_Files_Peers" Association="FreeFilesModel.FK_Files_Peers">
+      <End Role="Peer" EntitySet="Peers" />
+      <End Role="File" EntitySet="Files" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="FileID" />
+    </Key>
+    <Property Name="FileID" Type="Guid" Nullable="false" />
+    <Property Name="FileName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PeerID" Type="Guid" Nullable="false" />
+    <Property Name="PeerHostName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FileSize" Type="Int32" Nullable="false" />
+    <Property Name="FileType" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="OwnedBy" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Peer" Relationship="FreeFilesModel.FK_Files_Peers" FromRole="File" ToRole="Peer" />
+  </EntityType>
+  <EntityType Name="Peer">
+    <Key>
+      <PropertyRef Name="PeerID" />
+    </Key>
+    <Property Name="PeerID" Type="Guid" Nullable="false" />
+    <Property Name="PeerHostName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Files" Relationship="FreeFilesModel.FK_Files_Peers" FromRole="Peer" ToRole="File" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SharedFolder" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="DownloadFolder" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <Association Name="FK_Files_Peers">
+    <End Type="FreeFilesModel.Peer" Role="Peer" Multiplicity="1" />
+    <End Type="FreeFilesModel.File" Role="File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peer">
+        <PropertyRef Name="PeerID" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="PeerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

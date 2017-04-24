@@ -1,0 +1,9 @@
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\obj\Debug\FreeFiles.TransferEngine.WCFPNRP.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\bin\Debug\FreeFiles.TransferEngine.WCFPNRP.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\bin\Debug\FreeFiles.TransferEngine.WCFPNRP.pdb
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\bin\Debug\FreeFile.DownloadManager.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\bin\Debug\Entities.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\bin\Debug\FreeFile.DownloadManager.pdb
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\bin\Debug\Entities.pdb
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\obj\Debug\FreeFiles.TransferEngine.WCFPNRP.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFiles.TransferEngine.WCFPNRP\obj\Debug\FreeFiles.TransferEngine.WCFPNRP.pdb

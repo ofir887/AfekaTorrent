@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FreeFilesModelStoreContainer" CdmEntityContainer="AfekaTorrentEntities1">
+    <EntitySetMapping Name="Files">
+      <EntityTypeMapping TypeName="FreeFilesModel.File">
+        <MappingFragment StoreEntitySet="Files">
+          <ScalarProperty Name="OwnedBy" ColumnName="OwnedBy" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="PeerHostName" ColumnName="PeerHostName" />
+          <ScalarProperty Name="PeerID" ColumnName="PeerID" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Peers">
+      <EntityTypeMapping TypeName="FreeFilesModel.Peer">
+        <MappingFragment StoreEntitySet="Peers">
+          <ScalarProperty Name="PeerHostName" ColumnName="PeerHostName" />
+          <ScalarProperty Name="PeerID" ColumnName="PeerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="FreeFilesModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="DownloadFolder" ColumnName="DownloadFolder" />
+          <ScalarProperty Name="SharedFolder" ColumnName="SharedFolder" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

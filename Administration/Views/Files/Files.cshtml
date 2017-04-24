@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Entities.File>
+
+@{
+    ViewBag.Title = "Files";
+}
+
+
+<center><h2>Files List</h2></center>
+
+<div class="container">
+    <h4>Number of files: <strong>@ViewBag.FilesCount</strong></h4>
+</div>
+
+
+
+
+
+<div class="wrapper">
+    @using (Html.BeginForm())
+    {
+        <p>
+            Find by name: @Html.TextBox("SearchString")
+            <input type="submit" value="Search" />
+        </p>
+    }
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeerHostName)
+            </th>
+
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OwnedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FileName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FileSize)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FileType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PeerID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PeerHostName)
+                </td>
+               
+            </tr>
+        }
+
+    </table>
+

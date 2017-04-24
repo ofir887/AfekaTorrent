@@ -1,0 +1,10 @@
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\obj\Debug\FreeFilesServerConsole.csprojResolveAssemblyReference.cache
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\bin\Debug\FreeFilesServerConsole.exe.config
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\bin\Debug\FreeFilesServerConsole.exe
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\bin\Debug\FreeFilesServerConsole.pdb
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\bin\Debug\Entities.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\bin\Debug\EntityFramework.dll
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\bin\Debug\Entities.pdb
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\bin\Debug\EntityFramework.xml
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\obj\Debug\FreeFilesServerConsole.exe
+C:\Users\Ofir\Desktop\AfekaTorrent-master\FreeFilesServerConsole\obj\Debug\FreeFilesServerConsole.pdb
